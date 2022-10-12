@@ -6,11 +6,12 @@ public class PalindromTextFileReader extends TextFileReader {
 
     @Override
     public void display() {
+        StringBuilder sb = new StringBuilder();
         for(String line: lines) {
-            StringBuilder sb = new StringBuilder();
-            sb.append(line);
-            sb.reverse();
-            System.out.println(sb.toString());
+            sb.append(line).append("\n");
+            System.out.println(line);
         }
+        sb.reverse();
+        System.out.println(sb.toString());
     }
 }
